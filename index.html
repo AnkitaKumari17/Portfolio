@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/80a1586217.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/ank.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>   
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>            
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()" ></i>
+        </nav>
+
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span>Ankita Kumari</span> <br>from India.</h1>
+        </div>
+    </div>
+</div>
+
+
+<!--------------------------about section----------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about_img.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a full-stack software engineer and writer. I love programming, reading, writing and speaking. As a software engineer, I enjoy using my obsessive attention to detail, 
+                    my unequivocal love for making things that change the world. That's why I like to make things that make a difference. Ask me about anything, I am happy to help.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Developer</span><br>Designing Web/App interfaces</li>
+                        <li><span>App Developer</span><br>Building android app</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 - Current</span><br>Designing Web/App interfaces</li>
+                        <li><span>2017</span><br>Designing Web/App interfaces</li>
+                        <li><span>2016</span><br>Building android app</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021</span><br>BCA from Magadh Mahila College,Patna</li>
+                        <li><span>2018</span><br>HSC from M.D. Girl's high school,Bikram (Patna) </li>
+                        <li><span>2016</span><br>SSC from S.G.S. gil's school, Patut(Patna)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------Projects------------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-store"></i>
+                <h2>Electrical Store Management System</h2>
+                <p>This is the Electric Store Management that will help the owner of the electronic equipment shops to carry out the day-to-day businesses in a smooth and organized way. 
+                    This system is developed specifically to ease the needs of the departments of sales and purchase.</p>
+                <a href="#">Read more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Empowering Learning Edventure</h2>
+                <p>This app is developed specifically to ease the needs of the e-learning.
+                    The application aims at providing the best available study material in form
+                    of notes, videos, images and also in form of funny learning games like
+                    puzzle, quiz.</p>
+                <a href="#">Read more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-window-restore"></i>
+                <h2>Sales Insights dashboard</h2>
+                <p>Led the development of a comprehensive sales insights dashboard in
+                    Excel, providing a holistic view of sales performance across different
+                    product categories and regions.
+                    Utilized advanced visualizations such as donut chart, line graph, scatter
+                    plot and pie chart to identify sales patterns and trends.</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------Portfolio---------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png">
+                <div class="layer">
+                    <h3>Electronic Shopping app</h3>
+                    <p>Electrical Store Management System is a software project that serves the operation of the department of sales and purchase.
+                        Electrical Store Management is a workable application for retail store inventory and accounts management.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.png">
+                <div class="layer">
+                    <h3>Learning App</h3>
+                    <p>Empowering learning Edventure is an software which will help improve the teaching and learning experience for the 
+                        differently abled students.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.png">
+                <div class="layer">
+                    <h3>Sales Dashboard</h3>
+                    <p>Led the development of a comprehensive sales insights dashboard in
+                        Excel, providing a holistic view of sales performance across different
+                        product categories and regions.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!--________Contact________________-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>iamankitakumari0@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ankitakumaripatna/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/AnkitaKumari17"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/__ankita.27"><i class="fa-brands fa-square-instagram"></i></i></a>
+                </div>
+                <a href="" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Ankita Made this for learning purpose</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }   
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwhh4HAsadpZfUg5zxZUuBGEgtyTmmvtoSOrLCHzMIumN-goZysrtW3FywUPhKBb_Xl/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
