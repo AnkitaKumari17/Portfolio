@@ -1,2 +1,4 @@
 # Portfolio
-Html, Css is used for making this portfolio
+Page URL- https://ankitakumari17.github.io/Portfolio/
+
+Creating Portfolio using HTML & CSS.
